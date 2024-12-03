@@ -25,7 +25,7 @@ export const placeBid = (id, data) => async (dispatch) => {
   dispatch(bidSlice.actions.bidRequest());
   try {
     const response = await axios.post(
-      `http://13.201.133.244:8000/api/v1/bid/place/${id}`,
+      `http://65.2.177.182:8000/api/v1/bid/place/${id}`,
       data,
       {
         withCredentials: true,
